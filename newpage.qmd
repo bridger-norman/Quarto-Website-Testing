@@ -1,5 +1,5 @@
 ---
-title: 'page 2'
+title: 'New Page'
 ---
 
 ## This is a new page we created!

@@ -1,6 +1,9 @@
 ---
 title: "Home"
 ---
+## Overview
+
+\[This lesson will provide an overview of using subpages in Quarto and navigation options\]
 
 This is a Quarto website.
 

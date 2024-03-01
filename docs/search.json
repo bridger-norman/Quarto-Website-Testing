@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "[This lesson will provide an overview of using subpages in Quarto and navigation options]\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,61 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Home",
+    "section": "",
+    "text": "[This lesson will provide an overview of using subpages in Quarto and navigation options]\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "",
+    "text": "This lesson will provide an overview of using subpages in Quarto and navigation options"
+  },
+  {
+    "objectID": "test.html#overview",
+    "href": "test.html#overview",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "",
+    "text": "This lesson will provide an overview of using subpages in Quarto and navigation options"
+  },
+  {
+    "objectID": "test.html#learning-objectives",
+    "href": "test.html#learning-objectives",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nStudents will understand the purpose of subpages\nStudents will understand the purpose of a Nav bar\nStudents will be able to edit the website YAML\nStudents will create a website with a nav bar and subpages"
+  },
+  {
+    "objectID": "test.html#lesson",
+    "href": "test.html#lesson",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "Lesson",
+    "text": "Lesson\n\nBackground\nHaving multiple pages and a way to navigate them allows the developer to separate content and ideas and benefits the user with an organizational structure that is familiar. A navigation bar is a fundamental element of website design that plays a crucial role in helping users navigate, understand, and interact with the content and features of a site or application.\n\n\nCreating a New Page\nStep one is to create a new .qmd document that will become our new page. This should be a review from Unit 2 Lesson 2.\n\nCreate a quarto file by clicking the new file icon at the top-left in VSCode or right-clicking in the folder and selecting new file. Give the page file a name and end with .qmd\n\n\n\n\ncreating a qmd document\n\n\n\nAdd a title in the YAML and some markdown content underneath like such:\n\n\n\n\nadding title and content\n\n\n\n\nLinking the New Page to the YAML\nStep two is changing our metadata file, by default this will be named _quarto.yml. This file is referred to as a YAML. A YAML is used to specify various settings and configurations related to the document’s formatting, layout, styling, and other properties.\n\n\n\nlinked file in yaml\n\n\nAfter these changes push your work to git hub as shown in Unit 2 Lesson 3 and your website should update. You have now successfully connected your new page to the website! It should look something like this:\n\n\n\nweb page example\n\n\nNow we will explore formatting options so you can customize your website to your preferences preferences.\n\n\nFormatting\nNavigation Bar\nMenu\nSide Bar\nSections\nMore Details on navigation in quarto to be found here: https://quarto.org/docs/websites/website-navigation.html"
+  },
+  {
+    "objectID": "test.html#practice-activity",
+    "href": "test.html#practice-activity",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "Practice Activity",
+    "text": "Practice Activity\n\nAdd a New Page to your Website\n\nAdd a new Contact Page to your website.\nThe qmd file should be ‘contact.qmd’.\nAdd ‘Contact’ as the heading\nDo not forget to link to it in the YAML file\n\nYour new page should look something like this :\n\n\n\npractive activity complete"
+  },
+  {
+    "objectID": "test.html#conclusion",
+    "href": "test.html#conclusion",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "Conclusion",
+    "text": "Conclusion\nWith the ability to create subpages and the flexibility to design navigation interfaces, you are capable of building an organized website. Congratulations, with Quarto on your toolbelt you can build structured and useful websites that could benefit the lives of many!"
+  },
+  {
+    "objectID": "test.html#faq",
+    "href": "test.html#faq",
+    "title": "Lesson 01: Subpages and Nav Bars",
+    "section": "FAQ",
+    "text": "FAQ"
   }
 ]

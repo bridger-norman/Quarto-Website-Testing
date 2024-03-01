@@ -10,6 +10,7 @@ website:
         text: Home
       - about.qmd
       - newpage.qmd
+      - test.qmd
 
 format:
   html:

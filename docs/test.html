@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Website – Home</title>
+<title>Quarto Website – Lesson 01: Subpages and Nav Bars</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -101,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">New Page</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./test.html"> 
+    <a class="nav-link active" href="./test.html" aria-current="page"> 
 <span class="menu-text">Lesson 01: Subpages and Nav Bars</span></a>
   </li>  
 </ul>
@@ -121,6 +121,20 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#lesson" id="toc-lesson" class="nav-link" data-scroll-target="#lesson">Lesson</a>
+  <ul class="collapse">
+  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
+  <li><a href="#creating-a-new-page" id="toc-creating-a-new-page" class="nav-link" data-scroll-target="#creating-a-new-page">Creating a New Page</a></li>
+  <li><a href="#linking-the-new-page-to-the-yaml" id="toc-linking-the-new-page-to-the-yaml" class="nav-link" data-scroll-target="#linking-the-new-page-to-the-yaml">Linking the New Page to the YAML</a></li>
+  <li><a href="#formatting" id="toc-formatting" class="nav-link" data-scroll-target="#formatting">Formatting</a></li>
+  </ul></li>
+  <li><a href="#practice-activity" id="toc-practice-activity" class="nav-link" data-scroll-target="#practice-activity">Practice Activity</a>
+  <ul class="collapse">
+  <li><a href="#add-a-new-page-to-your-website" id="toc-add-a-new-page-to-your-website" class="nav-link" data-scroll-target="#add-a-new-page-to-your-website">Add a New Page to your Website</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a></li>
   </ul>
 </nav>
     </div>
@@ -129,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">Lesson 01: Subpages and Nav Bars</h1>
 </div>
 
 
@@ -148,9 +162,97 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>[This lesson will provide an overview of using subpages in Quarto and navigation options]</p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>This lesson will provide an overview of using subpages in Quarto and navigation options</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Students will understand the purpose of subpages</li>
+<li>Students will understand the purpose of a Nav bar</li>
+<li>Students will be able to edit the website YAML</li>
+<li>Students will create a website with a nav bar and subpages</li>
+</ul>
+</section>
+<section id="lesson" class="level2">
+<h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
+<section id="background" class="level3">
+<h3 class="anchored" data-anchor-id="background">Background</h3>
+<p>Having multiple pages and a way to navigate them allows the developer to separate content and ideas and benefits the user with an organizational structure that is familiar. A navigation bar is a fundamental element of website design that plays a crucial role in helping users navigate, understand, and interact with the content and features of a site or application.</p>
+</section>
+<section id="creating-a-new-page" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-new-page">Creating a New Page</h3>
+<p>Step one is to create a new .qmd document that will become our new page. This should be a review from Unit 2 Lesson 2.</p>
+<ul>
+<li>Create a quarto file by clicking the new file icon at the top-left in VSCode or right-clicking in the folder and selecting new file. Give the page file a name and end with .qmd</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/newpage.png" class="img-fluid figure-img"></p>
+<figcaption>creating a qmd document</figcaption>
+</figure>
+</div>
+<ul>
+<li>Add a title in the YAML and some markdown content underneath like such:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/title_and_content.png" class="img-fluid figure-img"></p>
+<figcaption>adding title and content</figcaption>
+</figure>
+</div>
+</section>
+<section id="linking-the-new-page-to-the-yaml" class="level3">
+<h3 class="anchored" data-anchor-id="linking-the-new-page-to-the-yaml">Linking the New Page to the YAML</h3>
+<p>Step two is changing our metadata file, by default this will be named _quarto.yml. This file is referred to as a YAML. A YAML is used to specify various settings and configurations related to the document’s formatting, layout, styling, and other properties.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/linked_file_in_yaml.png" class="img-fluid figure-img"></p>
+<figcaption>linked file in yaml</figcaption>
+</figure>
+</div>
+<p>After these changes push your work to git hub as shown in Unit 2 Lesson 3 and your website should update. You have now successfully connected your new page to the website! It should look something like this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/newpage_in_the_web.png" class="img-fluid figure-img"></p>
+<figcaption>web page example</figcaption>
+</figure>
+</div>
+<p>Now we will explore formatting options so you can customize your website to your preferences preferences.</p>
+</section>
+<section id="formatting" class="level3">
+<h3 class="anchored" data-anchor-id="formatting">Formatting</h3>
+<p>Navigation Bar</p>
+<p>Menu</p>
+<p>Side Bar</p>
+<p>Sections</p>
+<p>More Details on navigation in quarto to be found here: https://quarto.org/docs/websites/website-navigation.html</p>
+</section>
+</section>
+<section id="practice-activity" class="level2">
+<h2 class="anchored" data-anchor-id="practice-activity">Practice Activity</h2>
+<section id="add-a-new-page-to-your-website" class="level3">
+<h3 class="anchored" data-anchor-id="add-a-new-page-to-your-website">Add a New Page to your Website</h3>
+<ul>
+<li>Add a new Contact Page to your website.</li>
+<li>The qmd file should be ‘contact.qmd’.</li>
+<li>Add ‘Contact’ as the heading</li>
+<li>Do not forget to link to it in the YAML file</li>
+</ul>
+<p>Your new page should look something like this :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="link.png" class="img-fluid figure-img"></p>
+<figcaption>practive activity complete</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>With the ability to create subpages and the flexibility to design navigation interfaces, you are capable of building an organized website. Congratulations, with Quarto on your toolbelt you can build structured and useful websites that could benefit the lives of many!</p>
+</section>
+<section id="faq" class="level2">
+<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
 
 
 </section>
