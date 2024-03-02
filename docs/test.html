@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Website – Lesson 01: Subpages and Nav Bars</title>
+<title>Quarto Website – Lesson 03: Subpages and Nav Bars</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -102,7 +136,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./test.html" aria-current="page"> 
-<span class="menu-text">Lesson 01: Subpages and Nav Bars</span></a>
+<span class="menu-text">Lesson 03: Subpages and Nav Bars</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -143,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lesson 01: Subpages and Nav Bars</h1>
+<h1 class="title">Lesson 03: Subpages and Nav Bars</h1>
 </div>
 
 
@@ -162,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This lesson will provide an overview of using subpages in Quarto and navigation options</p>
+<p>This lesson will provide an overview of using subpages in Quarto and navigation options.</p>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
@@ -177,11 +211,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="lesson">Lesson</h2>
 <section id="background" class="level3">
 <h3 class="anchored" data-anchor-id="background">Background</h3>
-<p>Having multiple pages and a way to navigate them allows the developer to separate content and ideas and benefits the user with an organizational structure that is familiar. A navigation bar is a fundamental element of website design that plays a crucial role in helping users navigate, understand, and interact with the content and features of a site or application.</p>
+<p>Having multiple pages and a way to navigate them allows the developer to separate content and ideas. This benefits the user with an organizational structure that is familiar. A navigation bar is a fundamental element of website design that plays a crucial role in helping users navigate, understand, and interact with the content and features of a site or application. By default your webiste will be built with a nav bar. This lesson will teach you how to add content and customize the nav bar.</p>
 </section>
 <section id="creating-a-new-page" class="level3">
 <h3 class="anchored" data-anchor-id="creating-a-new-page">Creating a New Page</h3>
-<p>Step one is to create a new .qmd document that will become our new page. This should be a review from Unit 2 Lesson 2.</p>
+<p>Step one is to create a new .qmd document that will become our new page. This should be a review from Unit 2 Lesson 2. Make sure to add this file to your already existing website that you created in a previous lesson.</p>
 <ul>
 <li>Create a quarto file by clicking the new file icon at the top-left in VSCode or right-clicking in the folder and selecting new file. Give the page file a name and end with .qmd</li>
 </ul>
@@ -210,6 +244,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>linked file in yaml</figcaption>
 </figure>
 </div>
+<p>Step three is to now render or preview your index.html file after everthing is connected and saved. This allows quarto to output the html files and all other supporting files that creates our website.</p>
 <p>After these changes push your work to git hub as shown in Unit 2 Lesson 3 and your website should update. You have now successfully connected your new page to the website! It should look something like this:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -217,15 +252,91 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>web page example</figcaption>
 </figure>
 </div>
-<p>Now we will explore formatting options so you can customize your website to your preferences preferences.</p>
+<p>Now we will explore formatting options so you can customize your website to your personal preferences.</p>
 </section>
 <section id="formatting" class="level3">
 <h3 class="anchored" data-anchor-id="formatting">Formatting</h3>
-<p>Navigation Bar</p>
-<p>Menu</p>
-<p>Side Bar</p>
-<p>Sections</p>
+<section id="navigation-bar" class="level4">
+<h4 class="anchored" data-anchor-id="navigation-bar">Navigation Bar</h4>
+<p>Your _quarto.yml page contains the informaiton on how you want the webite formated. By default the website uses a navigation bar oriented at the top of the page. And should look like the image on your right.</p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Website"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> newpage.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<p><img src="images/nav1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="menu" class="level4">
+<h4 class="anchored" data-anchor-id="menu">Menu</h4>
+<p>If we don’t like the default nav bar we can do a couple things to change it. Notice in the code below I use <code>right:</code> this will take the contents of our nav bar and align them right. Next I added a menu item that will create a dropdown with all of our pages title Menu. Note you can create multiple menus for your website.</p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Website"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">text</span><span class="kw">:</span><span class="at"> </span><span class="st">'Menu'</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">menu</span><span class="kw">:</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> newpage.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<p><img src="images/nav2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="side-bar" class="level4">
+<h4 class="anchored" data-anchor-id="side-bar">Side Bar</h4>
+<p>If we want a side bar as opposed to a nav bar all we need to change is the <code>navbar:</code> to <code>sidebar:</code>. The style docked gives the navigation panel a gray background to seperate from the white page. You can remove this if you want it to blend with the page. Also not you need to specify the <code>contents:</code> for this code to work properly.</p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Website"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">style</span><span class="kw">:</span><span class="at"> docked</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> newpage.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<p><img src="images/sidebar1.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="sections" class="level4">
+<h4 class="anchored" data-anchor-id="sections">Sections</h4>
+<p>Lastly If you want a similar effect like menu with the nav bar you need to use <code>section:</code>. Notive you can give you section a title right after the section: code, my section is titled Pages. Note you can have multiple secitons which would be beneficial to seperate your content.</p>
+<div class="columns">
+<div class="column">
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Quarto Website"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">style</span><span class="kw">:</span><span class="at"> docked</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">section</span><span class="kw">:</span><span class="at"> </span><span class="st">'Pages'</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> newpage.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column">
+<p><img src="images/sidebar2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>I recommend going to the Quarto website and seeing how you can turn the YAML parameters to continue to make your website personal.</p>
 <p>More Details on navigation in quarto to be found here: https://quarto.org/docs/websites/website-navigation.html</p>
+<p>Note: If you want to change the colors of your web page look into changing the <code>theme:</code> element in your YAML</p>
+</section>
 </section>
 </section>
 <section id="practice-activity" class="level2">

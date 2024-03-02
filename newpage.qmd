@@ -3,3 +3,14 @@ title: 'New Page'
 ---
 
 ## This is a new page we created!
+
+```yml
+website:
+  title: "Quarto Website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - newpage.qmd
+```
