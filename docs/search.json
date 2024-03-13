@@ -82,5 +82,12 @@
     "title": "New Page",
     "section": "",
     "text": "website:\n  title: \"Quarto Website\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n      - newpage.qmd"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "John Doe\nusername@gmail.com\n(800) 800-8000\nLinkedIn\nGitHub"
   }
 ]
